@@ -1,0 +1,116 @@
+.App {
+  font-family: "Segoe UI";
+  text-align: left;
+  width: 800px;
+}
+
+/** Stykes for the ChirpTop component */
+
+.chirp-top {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  place-items: start end;
+}
+
+.profile-pic {
+  height: 72px;
+  width: 72px;
+  display: inline-block;
+}
+
+.left-box {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-gap: 10px;
+}
+
+p {
+  margin: 2.5px 0px;
+}
+
+.follow-btn {
+  width: fit-content;
+  height: 36px;
+  min-width: 105px;
+  line-height: 20px;
+  padding: 6px 16px;
+  text-align: center;
+
+  background-color: #ffffff;
+  color: #1da1f2;
+  font-weight: bolder;
+
+  border-color: #1da1f2;
+  border: 1px solid #1da1f2;
+
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+.display-name {
+  font-weight: bold;
+}
+
+.username {
+  font-size: 14px;
+  color: gray;
+}
+
+/** Styles for the ChirpMiddle component */
+
+.date {
+  color: gray;
+}
+
+.source {
+  margin: 0px 5px;
+  color: #1da1f2;
+  text-decoration: none;
+}
+
+.date,
+.source {
+  margin: 10px 0px;
+  font-size: 14px;
+}
+
+/** Styles for the ChirpBottom component */
+
+.activity-area {
+  padding: 15px 0px;
+
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+
+  display: grid;
+  grid-template-columns: min-content max-content;
+  grid-column-gap: 10px;
+}
+
+.buttons-area {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  justify-items: center;
+  padding: 15px 0px;
+}
+
+i {
+  font-size: 22px;
+  font-weight: lighter;
+  color: lightslategray;
+}
+
+/** Styles for the containing Chirp component */
+
+.chirp {
+  border: 1px solid skyblue;
+  padding: 10px;
+  width: 450px;
+
+  display: grid;
+  grid-template-rows: fit-content fit-content;
+  grid-gap: 10px;
+}
